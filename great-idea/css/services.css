@@ -3,87 +3,7 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
     /* border: 0px solid lightblue; */
@@ -95,27 +15,19 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block;
 }
 
 body {
-    line-height: 1;
+    line-height: 1.5;
 }
 
 ol,
 ul {
-    list-style: none;
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 2;
 }
 
 blockquote,
@@ -141,6 +53,7 @@ table {
 
 * {
     box-sizing: border-box;
+    /* border: 1px solid blue !important; */
 }
 
 html,
@@ -157,6 +70,10 @@ h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
+}
+
+h2{
+    font-size: 25px;
 }
 
 
@@ -205,11 +122,12 @@ header nav a:last-child {
     margin-right: 75px;
 }
 
-
+                                      
 /* main content */
 
 .top-content {
     padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -218,19 +136,55 @@ header nav a:last-child {
 .main-content {
     border-top: 1px solid black;
     margin-top: 25px;
-    padding-top: 25px;
+    padding: 25px 0px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-content div{
+    border: 1px solid black; 
+    width: 48%;  
+    margin-top: 35px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-content button {
+    background: white;
+    /* vertical-align: top; */
+    /* margin-top: 6px; */
+    padding: 8px 44px;
+    font-size: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
 }
 
 .bottom-content {
     border-top: 1px solid black;
     margin-top: 25px;
-    padding-top: 25px;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+}
+                                     
+.bottom-content .text-content{
+    display: flex;
+    flex-direction: column;
 }
 
 .banner .services-header-img {
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 footer {
