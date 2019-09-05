@@ -76,6 +76,10 @@ h2{
     font-size: 25px;
 }
 
+h3{
+    font-size: 20px;
+}
+
 
 /****************WORK HERE********************/
 
@@ -129,12 +133,25 @@ header nav a:last-child {
 /* main content */
 
 .top-content {
+    /* border: 1px solid red; */
+
     padding-top: 25px;
     padding-bottom: 25px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+.top-content .text-content{
+    /* border: 1px solid blue; */
+    margin-right: 35px;
+}
+
+.top-content-img{
+    /* border: 1px solid blue; */
+    margin-right: 35px;
+}
+
 
 .main-content {
     border-top: 1px solid black;
@@ -173,12 +190,14 @@ header nav a:last-child {
     padding: 50px 0px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;    
+    flex-wrap: nowrap;  
+    justify-content: space-between  
 }
                                      
 .bottom-content .text-content{
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .banner .services-header-img {
